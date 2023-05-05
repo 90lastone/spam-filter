@@ -1,2 +1,5 @@
-const test: number = 1;
-console.log(test);
+export function isSpam(
+  content: string, spamLinkDomains: string[], redirectionDepth: number
+): boolean {
+  return true;
+}
