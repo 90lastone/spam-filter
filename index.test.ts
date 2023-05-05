@@ -3,18 +3,18 @@ import { isSpam } from "./index";
 describe("isSpam", () => {
   const content = "spam spam https://moiming.page.link/exam?_imcp-1";
 
-  test("test1", () => {
+  test("test1", async () => {
     const spamLinkDomains = ["docs.github.com"];
     const redirectionDepth = 1;
 
-    expect(isSpam(content, spamLinkDomains, redirectionDepth)).toBe(false);
+    expect(await isSpam(content, spamLinkDomains, redirectionDepth)).toBe(false);
   })
 
-  test("test2", () => {
+  test("test2", async () => {
     const spamLinkDomains = ["moiming.page.link"];
     const redirectionDepth = 1;
 
-    expect(isSpam(content, spamLinkDomains, redirectionDepth)).toBe(true);
+    expect(await isSpam(content, spamLinkDomains, redirectionDepth)).toBe(true);
   })
 
   // test("test3", () => {
