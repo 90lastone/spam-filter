@@ -5,6 +5,11 @@ export function isSpam(
     if (isSpamContent(content, spamLinkDomains)) {
       return true;
     }
+    /*
+    TODO 리다이렉트 여부
+    - 301/302
+    - <a href=""></a> 태그 포함
+     */
   }
 
   return false;
