@@ -1,0 +1,16 @@
+{
+  "name": "spam-filter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/90lastone/spam-filter.git",
+  "author": "jjong <akrTmwk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
